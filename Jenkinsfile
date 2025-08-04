@@ -32,7 +32,7 @@ pipeline {
 				withCredentials([usernamePassword(credentialsId: 'lartiorkor-gh-creds', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
 					
 					sh 'git remote set-url origin "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/devOps-task-2.git"'
-					sh 'git push origin HEAD:test'
+					sh 'git push origin HEAD:dummy'
 				}
 				sh 'npx semantic-release'
 			}
