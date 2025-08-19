@@ -1,3 +1,14 @@
+# [1.6.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.5.0...v1.6.0) (2025-08-19)
+
+
+### Features
+
+* add debugging ([71727dc](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/71727dcf7e1f2921dc3009e71b15557f534c7ff9))
+* change release branch ([e738eab](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/e738eab6d0ec3a6aa97d5378f182218fdd373518))
+* modify jenkinsfile ([2602e35](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/2602e3575c819a1ea866aaa0c163da066ad3035a))
+* revert changes ([5e1606e](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/5e1606e1ad9f3c0e0696678d4f7a432e2356d930))
+* revert changes ([9f4f4a0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/9f4f4a0e113c4e28714fb5f3ab5b933e17b791a5))
+
 # [1.5.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.4.1...v1.5.0) (2025-08-05)
 
 
