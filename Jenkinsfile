@@ -22,7 +22,7 @@ pipeline {
 
 		stage('Publish To NPM') {
 			when {
-				branch 'dummy'
+				branch 'main'
 			}
 
 			steps {
