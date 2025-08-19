@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.7.0...v1.8.0) (2025-08-19)
+
+
+### Features
+
+* add text file ([3a7c120](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/3a7c12052ab4726f0c6ffdea406c00c4faae42da))
+
 # [1.7.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.6.0...v1.7.0) (2025-08-19)
 
 
