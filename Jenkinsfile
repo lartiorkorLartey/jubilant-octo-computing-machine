@@ -23,8 +23,9 @@ pipeline {
 
     stage('Publish To NPM') {
       when {
-        branch 'test'
+        branch 'dummy'
       }
+	  
       steps {
         // sh "echo '//registry.npmjs.org/:_authToken=\${NPM_TOKEN}' > .npmrc"
         // sh 'npm publish --access public'
