@@ -8,20 +8,20 @@ pipeline {
 	}
 
 	stages {
-		stage('Checkout Main') {
-			steps {
-				checkout([
-					$class: 'GitSCM',
-					branches: [[name: "*/main"]],
-					doGenerateSubmoduleConfigurations: false,
-					extensions: [],
-					userRemoteConfigs: [[
-						url: "https://github.com/Amali-Tech/unified-experience.git",
-						credentialsId: "lartiorkor-gh-creds"
-					]]
-				])
-			}
-		}
+		// stage('Checkout Main') {
+		// 	steps {
+		// 		checkout([
+		// 			$class: 'GitSCM',
+		// 			branches: [[name: "*/main"]],
+		// 			doGenerateSubmoduleConfigurations: false,
+		// 			extensions: [],
+		// 			userRemoteConfigs: [[
+		// 				url: "https://github.com/Amali-Tech/unified-experience.git",
+		// 				credentialsId: "lartiorkor-gh-creds"
+		// 			]]
+		// 		])
+		// 	}
+		// }
 
 		stage('Install Dependencies') {
 			steps {
@@ -37,7 +37,7 @@ pipeline {
 
 		stage('Publish To NPM') {
 			when {
-				branch 'main'
+				branch 'dummy'
 			}
 
 			steps {
