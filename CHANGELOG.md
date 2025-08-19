@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.6.0...v1.7.0) (2025-08-19)
+
+
+### Features
+
+* add soomething ([0baa07b](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/0baa07b88e707efd604436a55a18408266780f2b))
+* change branch ([db19aa3](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/db19aa317cb8cac58494e17a3b01788aa87da757))
+
 # [1.6.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.5.0...v1.6.0) (2025-08-19)
 
 
