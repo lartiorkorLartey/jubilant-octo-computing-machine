@@ -9,6 +9,35 @@ pipeline {
   }
 
   stages {
+	    stage('Skip CI Check') {
+      steps {
+        script {
+          def commitMsg = sh(
+            script: "git log -1 --pretty=%B",
+            returnStdout: true
+          ).trim()
+
+          if (commitMsg =~ /\[ci skip\]/) {
+            echo "⏭ Skipping the rest of the pipeline."
+            currentBuild.result = 'SUCCESS'
+
+            step([
+              $class: 'GitHubCommitStatusSetter',
+              contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'ci/jenkins'],
+              statusResultSource: [$class: 'ConditionalStatusResultSource',
+                results: [[
+                  state: 'SUCCESS',
+                  message: 'Build skipped due to [ci skip]'
+                ]]
+              ]
+            ])
+
+            throw new hudson.AbortException("Build skipped due to [ci skip]")
+          }
+        }
+      }
+    }
+
     stage('Install Dependencies') {
       steps {
         sh 'npm ci'
@@ -25,7 +54,7 @@ pipeline {
       when {
         branch 'dummy'
       }
-	  
+
       steps {
         // sh "echo '//registry.npmjs.org/:_authToken=\${NPM_TOKEN}' > .npmrc"
         // sh 'npm publish --access public'
