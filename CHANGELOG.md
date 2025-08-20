@@ -1,3 +1,15 @@
+# [1.11.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.10.0...v1.11.0) (2025-08-20)
+
+
+### Bug Fixes
+
+* update [ci skip] ([ecf9d99](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/ecf9d995b6d942b0ea66b7ada1c3772a643bc661))
+
+
+### Features
+
+* revert changes ([b01c807](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/b01c807d0bf4aab7fa3ff7a24c55f6f1e31c40a5))
+
 # [1.10.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.9.1...v1.10.0) (2025-08-20)
 
 
