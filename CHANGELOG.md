@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.8.0...v1.9.0) (2025-08-20)
+
+
+### Features
+
+* add word in file' ([c2b58f4](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/c2b58f400d3384bb86f1940b7b84b7ba5cc53113))
+
 # [1.8.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.7.0...v1.8.0) (2025-08-19)
 
 
