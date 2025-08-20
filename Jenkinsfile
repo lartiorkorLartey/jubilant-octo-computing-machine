@@ -9,35 +9,12 @@ pipeline {
   }
 
   stages {
-	stage('Skip CI Check') {
-      steps {
-        script {
-          def commitMsg = sh(
-            script: "git log -1 --pretty=%B",
-            returnStdout: true
-          ).trim()
-
-          if (commitMsg =~ /\[ci skip\]/) {
-            echo "⏭ Skipping the rest of the pipeline."
-            currentBuild.result = 'SUCCESS'
-
-            step([
-              $class: 'GitHubCommitStatusSetter',
-              contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'ci/jenkins'],
-              statusResultSource: [$class: 'ConditionalStatusResultSource',
-                results: [[
-                  state: 'SUCCESS',
-                  message: 'Build skipped due to [ci skip]'
-                ]]
-              ]
-            ])
-
-            throw new hudson.AbortException("Build skipped due to [ci skip]")
-          }
+    stage('Checkout') {
+        steps {
+            scmSkip(deleteBuild: true, skipPattern:'.*\\[ci skip\\].*')
         }
-      }
     }
-
+	
     stage('Install Dependencies') {
       steps {
         sh 'npm ci'
