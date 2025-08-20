@@ -1,2 +1,2 @@
-goat
 sheep
+cow

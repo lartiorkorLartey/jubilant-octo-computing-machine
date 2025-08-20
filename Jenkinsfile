@@ -9,7 +9,7 @@ pipeline {
   }
 
   stages {
-	    stage('Skip CI Check') {
+	stage('Skip CI Check') {
       steps {
         script {
           def commitMsg = sh(
