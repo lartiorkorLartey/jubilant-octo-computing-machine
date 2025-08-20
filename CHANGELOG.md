@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.9.1...v1.10.0) (2025-08-20)
+
+
+### Bug Fixes
+
+* remove word ([1b7dad9](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/1b7dad91c223de7a797f1e5706f1c77e6523ab4f))
+
+
+### Features
+
+* another word ([dfaae04](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/commit/dfaae04c42bcff4d722458b8b42cef7d4a70de41))
+
 ## [1.9.1](https://github.com/lartiorkorLartey/jubilant-octo-computing-machine/compare/v1.9.0...v1.9.1) (2025-08-20)
 
 
